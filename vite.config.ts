@@ -17,7 +17,7 @@ export default defineConfig({
       "display": "standalone",
       icons: [
         {
-          src: 'assets/images/profile.png',
+          src: 'assets/images/icon-192.png',
           "sizes": "512x512 192x192",
           type: 'image/png',
           purpose: 'maskable any',
