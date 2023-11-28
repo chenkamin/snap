@@ -3,7 +3,6 @@ import Loader from '@/components/shared/Loader';
 import SearchResults from '@/components/shared/SearchResults';
 import { Input } from '@/components/ui/input'
 import useDebounce from '@/hooks/useDebounce';
-import { searchPosts } from '@/lib/appwrite/api';
 import { useSearchPosts ,useGetPosts} from '@/lib/react-query/queriesAndMutations';
 import React, { useState,useEffect } from 'react'
 import { useInView } from 'react-intersection-observer';

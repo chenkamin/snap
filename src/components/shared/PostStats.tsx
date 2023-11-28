@@ -41,7 +41,7 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
         likePost({ postId: post?.$id || "", likesArray: newLikes })
     }
 
-    const handleSavePost = (e: React.MouseEvent) => {
+    const handleSavePost = () => {
 
         if (savedPostRecord) {
             setisSaved(false)

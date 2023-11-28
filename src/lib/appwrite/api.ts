@@ -1,7 +1,6 @@
 import { INewUser, INewPost, IUpdatePost } from "@/types";
 import { ID, Query } from "appwrite";
 import { account, appwriteConfig, avatars, databases, storage } from "./config";
-import { ArrowUpWideNarrow } from "lucide-react";
 
 
 export function generateHash() {
@@ -311,7 +310,6 @@ export async function updatePost(post: IUpdatePost) {
 
 
         // Convert tags into array
-        const tags = post.tags?.replace(/ /g, "").split(",") || [];
 
         // Create post
         const updatedPost = await databases.updateDocument(

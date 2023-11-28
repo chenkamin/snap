@@ -17,12 +17,12 @@ import { useUserContext } from "@/context/AuthContext"
 
 const SignupForm = () => {
     const { toast } = useToast()
-    const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
+    const { checkAuthUser } = useUserContext();
 
     const navigate = useNavigate();
 
     const { mutateAsync : createUserAccount, isPending : isCreatingUser} = useCreateUserAccount();
-    const { mutateAsync : signInAccount, isPending : isSigningIn} = useSigninAccount();
+    const { mutateAsync : signInAccount } = useSigninAccount();
     
     const form = useForm<z.infer<typeof SignupValidation>>({
         resolver: zodResolver(SignupValidation),
