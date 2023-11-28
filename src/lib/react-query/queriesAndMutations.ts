@@ -42,8 +42,10 @@ export const useSigninAccount = () => {
 
 export const useSignOutAccount = () => {
   return useMutation({
-    mutationFn: signOutAccount
-  })
+    mutationFn: async () => {
+      await signOutAccount();
+    }
+  });
 }
 
 
