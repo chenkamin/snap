@@ -10,13 +10,15 @@ export default defineConfig({
     registerType: 'autoUpdate', // Choose 'prompt' or 'autoUpdate' based on your preference
     includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
     manifest: {
-      name: 'Your App Name',
-      short_name: 'App',
+      name: 'snapgram',
+      short_name: 'Sanp',
       description: 'Your Progressive Web App Description',
+      "start_url": "https://snap-rttn.vercel.app/",
+      "display": "standalone",
       icons: [
         {
           src: 'assets/images/profile.png',
-          "sizes": "192x192",
+          "sizes": "512x512 192x192",
           type: 'image/png',
           purpose: 'maskable any',
         },
