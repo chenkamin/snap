@@ -15,8 +15,8 @@ export default defineConfig({
       description: 'Your Progressive Web App Description',
       icons: [
         {
-          src: '/assets/icon-512x512.png',
-          sizes: '192x192',
+          src: '/assets/images/profile.png',
+          "sizes": "512x512",
           type: 'image/png',
           purpose: 'maskable any',
         },
