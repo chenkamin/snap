@@ -16,7 +16,7 @@ export default defineConfig({
       icons: [
         {
           src: 'assets/images/profile.png',
-          "sizes": "512x512",
+          "sizes": "192x192",
           type: 'image/png',
           purpose: 'maskable any',
         },
